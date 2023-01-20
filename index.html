@@ -355,6 +355,48 @@
             </svg>
           </div>
         </button>
+        <form class="modal_form">
+          <div class="form_div" role="group" aria-labelledby="form_inputs">
+            <p id="form_title">Zostaw swoje dane w formularzu poniżej</p>
+            <ul>
+              <li>
+                <label>
+                  Imie
+                  <input class="form_input" type="text" name="username" />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Telefon
+                  <input class="form_input" type="tel" name="tel" />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Email
+                  <input class="form_input" type="email" name="email" />
+                </label>
+              </li>
+              <li>
+                <p>Komentarz</p>
+                <textarea class="form_input" name="review" placeholder="Wprowadź tekst" rows="8">
+                </textarea>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal_form_checkbox" role="group" aria-labelledby="statement">
+            <label>
+              <input class="form_checkbox" type="checkbox" name="language" value="python" />
+              oświadczam iż akceptuję
+              <a href="#" target="_blank" class="form__label-link"> regulamin </a>
+              i
+              <a href="#" target="_blank" class="form__label-link">politykę prywatności</a>
+            </label>
+          </div>
+
+          <button type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
