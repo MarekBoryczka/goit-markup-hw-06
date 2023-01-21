@@ -584,21 +584,65 @@ body {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 12px;
 }
 
-.form_title {
-  text-transform: uppercase;
+.label_input,
+.textarea_p {
+  color: var(--lorem-ipsum-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.textarea_p {
+  padding-bottom: 4px;
 }
 
 .form_input {
   width: 100%;
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
-.form_checkbox {
+.form_textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal_form_checkbox {
+  padding: 20px 14px 30px 15px;
+}
+
+.form_input_checkbox,
+.checkbox_a {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+.checkbox_a {
+  color: var(--brand-color);
+}
+
+.modal_form_btn {
+  color: var(--text_on_background-color);
+  line-height: 30px;
+  background: var(--brand-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 76px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 124px;
 }
 
 .footer_form_title {
