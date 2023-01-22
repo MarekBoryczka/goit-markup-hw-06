@@ -20,19 +20,19 @@
         <a class="header_logo" href="./index.html"><span class="span_logo">Web</span>Studio</a>
         <ul class="header_list_1">
           <li class="item_list_1">
-            <a class="header_nav is_active" href="./index.html" class="link">Agencja</a>
+            <a class="header_nav is_active" href="./index.html">Agencja</a>
           </li>
           <li class="item_list_1">
-            <a class="header_nav" href="./portfolio.html" class="link">Portfolio</a>
+            <a class="header_nav" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="item_list_1">
-            <a class="header_nav" href="#" class="link">Kontakt</a>
+            <a class="header_nav" href="#">Kontakt</a>
           </li>
         </ul>
       </nav>
       <ul class="header_list_2">
         <li class="item_list_2">
-          <a class="header_contact" href="mailto:info@devstudio.com" class="link">
+          <a class="header_contact" href="mailto:info@devstudio.com">
             <svg class="header_contact_mail" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
@@ -40,7 +40,7 @@
           >
         </li>
         <li class="item_list_2">
-          <a class="header_contact" href="tel:+48111111111" class="link">
+          <a class="header_contact" href="tel:+48111111111">
             <svg class="header_contact_phone" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
@@ -384,31 +384,25 @@
                   <input class="form_input" type="email" name="email" />
                 </label>
               </li>
-              <li>
+              <li class="form_item">
                 <p class="textarea_p">Komentarz</p>
-                <textarea
-                  class="form_textarea"
-                  type="text"
-                  name="comment"
-                  placeholder="Wprowadź tekst"
-                >
+                <textarea class="form_textarea" name="comment" placeholder="Wprowadź tekst">
                 </textarea>
               </li>
             </ul>
           </div>
           <div class="modal_form_checkbox" role="group" aria-labelledby="statement">
-            <label id="statement" class="form_label_checkbox">
+            <input
+              class="form_input_checkbox"
+              id="statement"
+              type="checkbox"
+              name="statement"
+              required
+            />
+            <label for="statement" class="form_label_checkbox">
               <svg class="form_icon_vector" width="16" height="15">
                 <use href="./images/icons.svg#icon-check-vector"></use>
               </svg>
-              <input
-                class="form_input_checkbox"
-                autocomplete="off"
-                type="checkbox"
-                required
-                name="statement"
-                checked
-              />
               Oświadczam iż akceptuję
               <a class="checkbox_a" href="#" target="_blank"> Regulamin </a>
               i
