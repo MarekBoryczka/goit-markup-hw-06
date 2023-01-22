@@ -648,12 +648,24 @@ body {
   padding: 20px 14px 30px 15px;
 }
 
-.form_input_checkbox,
+.form_icon_vector {
+  fill: var(--main-color);
+  position: relative;
+  top: 2px;
+}
+
+.form_input_checkbox {
+  appearance: none;
+}
+
+.form_label_checkbox,
 .checkbox_a {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  position: relative;
+  cursor: pointer;
 }
 
 .checkbox_a {
