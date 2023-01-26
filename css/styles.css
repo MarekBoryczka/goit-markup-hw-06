@@ -99,11 +99,7 @@ body {
   align-items: center;
 }
 
-.header_contact_mail {
-  margin-right: 5px;
-}
-
-.header_contact_phone {
+.header_contact_icon {
   margin-right: 5px;
 }
 
@@ -144,12 +140,8 @@ body {
   fill: var(--brand-color);
 }
 
-.filters {
-  padding-bottom: 50px;
-}
-
 .main_filters {
-  padding: 0px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -225,10 +217,6 @@ body {
   cursor: pointer;
 }
 
-.lorem {
-  padding-bottom: 0px;
-}
-
 .list_lorem {
   display: flex;
   justify-content: center;
@@ -301,7 +289,6 @@ body {
 }
 
 .title_our_team {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42.19px;
@@ -338,12 +325,8 @@ body {
 }
 
 .container_team_icon {
-  /* width: 206px;
-  height: 44px;
-  margin: 0px auto;
-  align-items: center; */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   column-gap: 10px;
 }
 
@@ -378,7 +361,6 @@ body {
 }
 
 .title_client {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42.19px;
@@ -425,14 +407,10 @@ body {
   fill: var(--icons-color);
 }
 
-.portfolio {
-  padding-top: 0px;
-}
-
 .card-set {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-
   gap: 30px;
 }
 
@@ -470,7 +448,6 @@ body {
 
 .card_overlay_text {
   padding: 49px 45px 49px 24px;
-
   color: var(--text_on_background-color);
   font-size: 18px;
   line-height: 1.55;
@@ -510,7 +487,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-
   font-style: normal;
 }
 
@@ -524,7 +500,6 @@ body {
 
 .footer_title {
   color: var(--text_on_background-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -534,10 +509,13 @@ body {
 }
 
 .footer_list_icon {
-  width: 206px;
   height: 44px;
   display: flex;
   justify-content: space-between;
+}
+
+.footer_item_icon:not(:last-child) {
+  padding-right: 10px;
 }
 
 .footer_bg_icon {
@@ -566,7 +544,7 @@ body {
   padding: 40px;
 }
 
-.form_div > p {
+.form_div > h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -646,10 +624,12 @@ body {
 
 .form_input_checkbox {
   appearance: none;
+  visibility: hidden;
 }
 
 .form_label_checkbox {
   position: relative;
+  left: 15px;
   cursor: pointer;
 }
 
@@ -659,8 +639,8 @@ body {
   position: absolute;
   left: -20px;
   top: 0;
-  width: 15px;
-  height: 100%;
+  width: 16px;
+  height: 15px;
   border: 1px solid #000;
 }
 
@@ -779,6 +759,9 @@ body {
 }
 
 .backdrop {
+  /* display: flex;
+  justify-content: center;
+  text-align: center; */
   position: fixed;
   left: 0;
   top: 0;
